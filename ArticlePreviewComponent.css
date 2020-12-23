@@ -6,9 +6,151 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color:hsl(212, 23%, 69%);
+  font-family: 'Manrope', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+
 .o-flag {
   display: flex;
   align-items: center;
   width: 100%;
-
 }
+
+.o-flag__body {
+  width: auto;
+  flex: 1;
+}
+
+.o-flag__img {
+  text-align: center;
+}
+
+.o-flag--xl > .o-flag__img {
+  margin-right: 40px;
+}
+
+.o-flag--l > .o-flag__img {
+  margin-right: 20px;
+}
+
+
+
+.c-article {
+  max-width: 720px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.c-article__image {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px 0 0 10px;
+}
+
+.c-drawers {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.c-article__title {
+  margin-right: 40px;
+  color: hsl(217, 19%, 35%);
+  letter-spacing: 1px;
+}
+
+.c-article__description {
+  margin-right: 40px;
+  color: hsl(212, 23%, 69%);
+}
+
+.c-data {
+  margin-top: 30px;
+}
+
+
+.c-data__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.c-michelle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.c-data__title {
+  margin: 0;
+  color: hsl(217, 19%, 35%);
+}
+
+.c-data__share {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+  
+.c-data__button {
+  background-color: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.c-data__button:hover {
+  background-color: hsl(212, 23%, 69%);
+}
+
+.c-data__button--hide {
+   position: absolute;
+   background-color: hsl(217, 19%, 35%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 1;
+   padding: 25px 20px;
+   height: 5px;
+   border-radius: 10px;
+   margin-top: -130px;
+   margin-left: -108px;
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+}
+
+.c-data__button--hide:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border: 15px solid transparent;
+  border-top-color: hsl(217, 19%, 35%);
+  border-bottom: 0;
+  margin-bottom: -15px;
+  margin-left: -15px;
+}
+
+.c-data__button--hide > p {
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: hsl(210, 46%, 95%);
+  opacity: 0.5;
+  letter-spacing: 5px;
+}
+
+.c-data__button--hide ul li {
+  padding: 0 10px;
+}
+
+
