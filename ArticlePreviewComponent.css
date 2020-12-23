@@ -1,60 +1,14 @@
-body {
-  background-color: aliceblue;
+*
+*::before
+*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  border: 1px solid;
-  width: 1440px;
-  height: 810px;
-  margin: auto;
-  font-size: 13px;
 }
 
 .o-flag {
-  margin: 50vh auto;
-  transform: translateY(-50%) scale(1);
-  width: 50%;
-  height: 33.33%;
-  border-radius: 10px;
   display: flex;
-}
-
-.o-flag__image {
-  width: 40%;
-  height: 100%;
-}
-
-.o-flag__image > img {
-  max-width: 100%;
-  height: 100%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.o-flag__body {
-  background-color: white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 60%;
-  padding: 20px;
-}
-
-.o-flag__text {
-}
-
-.o-flag--small {
-  display: flex;
+  align-items: center;
   width: 100%;
-}
 
-.o-flag--small__image {
-  width: 25%;
-}
-
-.o-flag--small__image > img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.o-flag--small__body {
-  width: 75%;
-  margin-left: 30px;
 }
