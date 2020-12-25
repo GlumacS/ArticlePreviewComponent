@@ -102,6 +102,7 @@ ul {
   border-radius: 50%;
   text-align: center;
 }
+
   
 .c-data__button {
   background-color: hsl(210, 46%, 95%);
@@ -112,6 +113,12 @@ ul {
 
 .c-data__button:hover {
   background-color: hsl(212, 23%, 69%);
+ 
+}
+
+.c-data__share:hover .c-data__button--hide {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .c-data__button--hide {
@@ -120,7 +127,8 @@ ul {
    display: flex;
    justify-content: center;
    align-items: center;
-   opacity: 1;
+   opacity: 0;
+   pointer-events: none;
    padding: 25px 20px;
    height: 5px;
    border-radius: 10px;
@@ -129,7 +137,8 @@ ul {
    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
 }
 
-.c-data__button--hide:after {
+
+.c-data__button--hide::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -152,5 +161,6 @@ ul {
 .c-data__button--hide ul li {
   padding: 0 10px;
 }
+
 
 
